@@ -19,7 +19,7 @@ if (location.href.includes("meet.google.com")) {
             if (messageText == null || messageText == "") {
                 return void startTimer();
             }
-
+#
             var formattedMessage = timestampText + ": " + messageText;
             console.log(formattedMessage);
 
