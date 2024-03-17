@@ -1,0 +1,16 @@
+{
+  "name": "ver-0.2.1",
+  "version": "1.0.0",
+  "description": "idk",
+  "main": "manifest.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "openai": "^4.29.1"
+  }
+}

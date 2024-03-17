@@ -1,0 +1,34 @@
+{
+    "name": "HackHive Extension",
+    "version": "0.3.2",
+    "manifest_version": 3,
+    "description": "Summarizing meetings for you!",
+    "action": {
+        "default_popup": "pages/popup.html",
+        "default_icon": "icons/meet_icon.png"
+    },
+
+    "permissions": ["tabs", "storage", "activeTab"],
+    "host_permissions": ["https://meet.google.com/*"],
+
+    "background": {
+        "service_worker": "scripts/background.js"
+    },
+    
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["scripts/contentScript.js"]
+        }
+    ],
+
+    "web_accessible_resources": [
+        {
+          "resources": ["popup.js", "popup.html", "styles.css"],
+          "matches": ["<all_urls>"]
+        }
+      ]
+
+}
+
